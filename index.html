@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>PDsite</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="#">PDsite </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Activities
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Technology</a>
+                        <a class="dropdown-item" href="#">Programming</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Projects</a>
+                        <a class="dropdown-item" href="#">Write for us/feedback</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button type="button" class="btn btn-outline-warning" data-toggle="modal"
+                    data-target="#LoginModal">Login</button>
+                <button type="button" class="btn btn-outline-warning" data-toggle="modal"
+                    data-target="#SignUpModal">SignUp</button>
+                <h6>""</h6>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Login modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to PDsite</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                    </div>
+                </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- SignUp modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModalLabel">SignUp to PDsite</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="contact.php" method="post">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" name="fname">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" name="lname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="cfpassword">
+                        </div>
+                        <div class="form-group form-check">
+                            <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+                            <!-- <label class="form-check-label" for="exampleCheck1">check me out</label> -->
+                        </div>
+                        <input type="submit" class="btn btn-primary" name="submit" value="submit">Create account
+
+                    </form>
+                </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" name="submit" value="submit">Create account</button>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>WELCOME</h2>
+                    <p>sum of techniques, skills, methods, and processes</p>
+                    <!-- <button class="btn btn-primary">Technology</button> -->
+                    <button class="btn btn-primary">Web development</button>
+                    <button class="btn btn-danger">App development</button>
+                    <button class="btn btn-success">Designer</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Developer</h2>
+                    <p>Become a master in programming</p>
+                    <button class="btn btn-primary">Programming</button>
+                    <button class="btn btn-danger">Technology</button>
+                    <button class="btn btn-success">Projects</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>AI</h2>
+                    <p>New skills,techniques & features</p>
+                    <button class="btn btn-danger">AI</button>
+                    <button class="btn btn-success">ML</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <span class="border">
+            <div class="card-deck">
+                <div class="card bg-success">
+                    <div class="card-body">
+                        <h5 class="card-title">Qt Creator</h5>
+                        <img src="data:image/png;base64,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"
+                            class="card-img-top" alt="...">
+                        <p class="card-text">Qt Creator is a cross-platform C++, JavaScript and QML integrated
+                            development environment which simplifies GUI application development. </p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="card bg-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">Hardwares</h5>
+                        <img src="7.jpg " class="card-img-top" alt="...">
+                        <p class="card-text">Computer hardware includes the physical parts of a computer, such as
+                            the
+                            case, central processing unit, monitor, mouse, keyboard, computer data storage, graphics
+                            card, sound card, speakers and motherboard.
+                        </p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="card bg-warning">
+                    <div class="card-body">
+                        <h5 class="card-title">Resume & CV</h5>
+                        <img src="8.png" class="card-img-top" alt="...">
+                        <p class="card-text">The primary differences between a resume and a curriculum vitae (CV)
+                            are
+                            length, what is included, and what each is used for. While both are used in job
+                            applications, a resume and a CV are not always interchangeable.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="card bg-danger">
+                    <div class="card-body">
+                        <h5 class="card-title">Environment</h5>
+                        <img src="6.jpg" class="card-img-top" alt="...">
+                        <p class="card-text">Globally, forest cover is one-third less than what it once was and
+                            global
+                            deforestation continues at 18 million hectares per year. This indiscriminate felling of
+                            trees, needs to be undertaken on a large scale to reverse the ill effects of
+                            deforestation
+                            and restore the ecological balance.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </span>
+    </div>
+
+    <div class="container">
+        <span class="border ">
+            <div class="text-center mb-4">
+                <img class="mb-4" src="4.jpg " alt="" width="200" height="200">
+        </span>
+        <h1 class="h3 mb-3 font-weight-normal">P & D</h1>
+    </div>
+    </div>
+
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 PDsite, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
