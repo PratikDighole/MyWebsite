@@ -1,0 +1,115 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color:cornflowerblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1
+{
+    color: aliceblue;
+    text-align: center;
+}
+
+.box
+{
+ border: 2px solid white;   
+ height: 400px;
+ width: 1000px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(to right);
+ 
+}
+.inbox
+{
+    /* border: 2px solid yellow; */
+    height: 350px;
+    width: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+.Outbox
+{
+    /* border: 2px solid yellow; */
+    height: 350px;
+    width: 800px;
+    text-align: center;
+    background-color: azure;
+    background: linear-gradient(to right);
+    border-radius: 100px 0 0 100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Outbox .left
+{
+    border: 0px solid black;
+    height: 300px;
+    width: 600px;
+}
+
+.Outbox .left input[type='text']
+{
+    width: 50%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.Outbox .left input[type='date']
+{
+    width: 50%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+.Outbox .left input[type='submit']
+{
+    width: 30%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: rgb(31, 150, 31);
+    color: white;
+}
+.Outbox .left input[type='reset']
+{
+    width: 30%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    background-color: rgb(245, 16, 16);
+    color: white;
+}
+/* .Outbox .right input[type='text']
+{
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}  */
